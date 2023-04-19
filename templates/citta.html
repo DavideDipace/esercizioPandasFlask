@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <form action="/es1" method = 'GET'>
+        
+        <input type="submit" value='invia'>
+    </form>
+    <br>
+    {%for citta in lista%}
+    <a href = "/{{citta}}"><p>{{citta}}</p></a>
+    {%endfor%}
+</body>
+</html>
